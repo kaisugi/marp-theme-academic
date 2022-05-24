@@ -1,0 +1,75 @@
+/* @theme academic */
+
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+  --color-background: #fff;
+  --color-foreground: #333;
+}
+
+section {
+  font-family: 'Noto Sans', sans-serif;
+  padding-top: 110px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+strong {
+  -webkit-text-stroke: 0.3px black;
+}
+
+section.lead h1 {
+  color: rgb(128, 0, 0);
+  text-align: left;
+}
+section.lead h2 {
+  color: rgb(128, 0, 0);
+  text-align: left;
+}
+section.lead h3 {
+  color: rgb(128, 0, 0);
+  text-align: left;
+}
+section.lead h4 {
+  color: rgb(128, 0, 0);
+  text-align: left;
+}
+section.lead h5 {
+  color: rgb(128, 0, 0);
+  text-align: left;
+}
+section.lead p {
+  text-align: right;
+}
+
+header {
+  background-color: rgb(128, 0, 0);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+blockquote {
+  max-width: 90%;
+  border-top: 0.1em dashed #555;
+  font-size: 60%;
+  position: absolute;
+  bottom: 20px;
+}
+blockquote::before {
+  content: "";
+}
+blockquote::after {
+  content: "";
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}

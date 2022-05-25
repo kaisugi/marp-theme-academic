@@ -11,20 +11,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 16.x
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16.x
-        cache: 'npm'
-    - run: yarn install
 
     - name: generate pdf
       run: | 
-        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" marpteam/marp-cli demo.md --theme themes/academic.css --pdf --allow-local-files
+        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli demo.md --theme themes/academic.css --pdf --allow-local-files
       
     - name: generate png
       run: |
-        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" marpteam/marp-cli demo.md --theme themes/academic.css --images --allow-local-files
+        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli demo.md --theme themes/academic.css --images --allow-local-files
       
     - name: commit & push
       run: |

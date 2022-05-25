@@ -7,6 +7,7 @@
 :root {
   --color-background: #fff;
   --color-foreground: #333;
+  --color-highlight: #800000;
 }
 
 section {
@@ -22,31 +23,46 @@ strong {
 }
 
 section.lead h1 {
-  color: rgb(128, 0, 0);
+  color: #800000;
   text-align: left;
+}
+section.lead h1 strong {
+  -webkit-text-stroke: 1px #800000;
 }
 section.lead h2 {
-  color: rgb(128, 0, 0);
+  color: #800000;
   text-align: left;
+}
+section.lead h2 strong {
+  -webkit-text-stroke: 1px #800000;
 }
 section.lead h3 {
-  color: rgb(128, 0, 0);
+  color: #800000;
   text-align: left;
+}
+section.lead h3 strong {
+  -webkit-text-stroke: 1px #800000;
 }
 section.lead h4 {
-  color: rgb(128, 0, 0);
+  color: #800000;
   text-align: left;
 }
+section.lead h4 strong {
+  -webkit-text-stroke: 1px #800000;
+}
 section.lead h5 {
-  color: rgb(128, 0, 0);
+  color: #800000;
   text-align: left;
+}
+section.lead h5 strong {
+  -webkit-text-stroke: 1px #800000;
 }
 section.lead p {
   text-align: right;
 }
 
 header {
-  background-color: rgb(128, 0, 0);
+  background-color: #800000;
   color: #fff;
   font-size: 1em;
   font-weight: 700;

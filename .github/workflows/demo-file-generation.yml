@@ -19,10 +19,14 @@ jobs:
     - run: yarn install
 
     - name: generate pdf
-      run: npx @marp-team/marp-cli demo.md --theme themes/academic.css --pdf --allow-local-files
+      run: | 
+        sudo localectl set-locale LANG="ja_JP.UTF-8"
+        npx @marp-team/marp-cli demo.md --theme themes/academic.css --pdf --allow-local-files
       
     - name: generate png
-      run: npx @marp-team/marp-cli demo.md --theme themes/academic.css --images --allow-local-files
+      run: |
+        sudo localectl set-locale LANG="ja_JP.UTF-8"
+        npx @marp-team/marp-cli demo.md --theme themes/academic.css --images --allow-local-files
       
     - name: commit & push
       run: |

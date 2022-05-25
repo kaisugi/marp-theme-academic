@@ -1,3 +1,8 @@
 # marp-theme-academic
 
-![](https://user-images.githubusercontent.com/36184621/170011125-17720346-be1b-40df-8d21-4ed3b703a558.png)
+![](./demo.001.png)
+![](./demo.002.png)
+![](./demo.003.png)
+![](./demo.004.png)
+![](./demo.005.png)
+![](./demo.006.png)

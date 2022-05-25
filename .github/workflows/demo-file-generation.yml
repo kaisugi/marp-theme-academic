@@ -1,0 +1,37 @@
+name: generate demo files
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+        cache: 'npm'
+    - run: yarn install
+
+    - name: generate pdf
+      run: npx @marp-team/marp-cli demo.md --theme themes/academic.css --pdf --allow-local-files
+      
+    - name: generate png
+      run: npx @marp-team/marp-cli demo.md --theme themes/academic.css --images --allow-local-files
+      
+    - name: commit & push
+      run: |
+        if ! git diff --exit-code --quiet
+        then
+          git add -A
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "update demo files"
+          git push
+        fi

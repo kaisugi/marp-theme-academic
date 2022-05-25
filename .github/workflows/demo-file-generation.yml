@@ -20,13 +20,11 @@ jobs:
 
     - name: generate pdf
       run: | 
-        sudo localectl set-locale LANG="ja_JP.UTF-8"
-        npx @marp-team/marp-cli demo.md --theme themes/academic.css --pdf --allow-local-files
+        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" marpteam/marp-cli demo.md --theme themes/academic.css --pdf --allow-local-files
       
     - name: generate png
       run: |
-        sudo localectl set-locale LANG="ja_JP.UTF-8"
-        npx @marp-team/marp-cli demo.md --theme themes/academic.css --images --allow-local-files
+        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" marpteam/marp-cli demo.md --theme themes/academic.css --images --allow-local-files
       
     - name: commit & push
       run: |

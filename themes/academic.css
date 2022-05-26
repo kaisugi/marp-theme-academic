@@ -22,6 +22,10 @@ strong {
   -webkit-text-stroke: 0.3px black;
 }
 
+ul ul {
+  font-size: 0.9em;
+}
+
 section.lead h1 {
   color: #800000;
   text-align: left;

@@ -24,10 +24,6 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 
-strong {
-  -webkit-text-stroke: 0.3px black;
-}
-
 ul ul {
   font-size: 0.9em;
 }

@@ -1,7 +1,7 @@
 /* @theme academic */
 
 @import 'gaia';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root {
@@ -12,7 +12,7 @@
 
 section {
   background-image: none;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   padding-top: 110px;
   padding-left: 40px;
   padding-right: 40px;
@@ -20,6 +20,7 @@ section {
 
 /* https://github.com/marp-team/marpit/issues/271 */
 section::after {
+  font-weight: 700;
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 

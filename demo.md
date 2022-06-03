@@ -7,7 +7,7 @@ math: katex
 
 <!-- _class: lead -->
 
-# **Marpで研究室の発表スライドを作る**
+# Marpで研究室の発表スライドを作る
 
 #### 〜Beamerを卒業しよう〜
 

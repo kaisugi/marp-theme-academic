@@ -7,11 +7,16 @@
 :root {
   --color-background: #fff;
   --color-foreground: #333;
-  --color-highlight: #800000;
+  --color-highlight: #ee955a;
 }
 
 section {
-  background-image: none;
+  /* background-image: url('https://avatars.githubusercontent.com/u/98759948?s=48&v=4');
+  background-repeat: no-repeat;
+  background-position: 1130px 550px;
+  background-size: 10%; */
+  background-image: url(../img/cover.jpg);
+  background-size: 100%;
   font-family: 'Noto Sans JP', sans-serif;
   padding-top: 90px;
   padding-left: 40px;
@@ -29,46 +34,46 @@ ul ul {
 }
 
 section.lead h1 {
-  color: #800000;
+  color: #ec7f36;
   text-align: left;
 }
 section.lead h1 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #ee955a;
 }
 section.lead h2 {
-  color: #800000;
+  color: #ee955a;
   text-align: left;
 }
 section.lead h2 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #ee955a;
 }
 section.lead h3 {
-  color: #800000;
+  color: #ee955a;
   text-align: left;
 }
 section.lead h3 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #ee955a;
 }
 section.lead h4 {
-  color: #800000;
+  color: #ee955a;
   text-align: left;
 }
 section.lead h4 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #ee955a;
 }
 section.lead h5 {
-  color: #800000;
+  color: #ee955a;
   text-align: left;
 }
 section.lead h5 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #ee955a;
 }
 section.lead p {
   text-align: right;
 }
 
 header {
-  background-color: #800000;
+  background-color: #ee955a;
   color: #fff;
   font-size: 1em;
   font-weight: 700;

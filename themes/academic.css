@@ -11,14 +11,10 @@
 }
 
 section {
-  /* background-image: url('https://avatars.githubusercontent.com/u/98759948?s=48&v=4');
-  background-repeat: no-repeat;
-  background-position: 1130px 550px;
-  background-size: 10%; */
-  background-image: url(../img/cover.jpg);
+  background-image: url('https://raw.githubusercontent.com/Luftalian/marp-theme-academic/main/images/slide.jpg');
   background-size: 100%;
   font-family: 'Noto Sans JP', sans-serif;
-  padding-top: 90px;
+  padding-top: 110px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -31,6 +27,52 @@ section::after {
 
 ul ul {
   font-size: 0.9em;
+}
+
+section.title {
+  height: 100%;
+  background-image: url('https://raw.githubusercontent.com/Luftalian/marp-theme-academic/main/images/cover.jpg');
+  background-size: 100%;
+}
+
+section.title h1 {
+  color: #333;
+  margin-top: 190px;
+  text-align: center;
+}
+section.title h1 strong {
+  -webkit-text-stroke: 1px #ee955a;
+}
+section.title h2 {
+  color: #ee955a;
+  text-align: left;
+}
+section.title h2 strong {
+  -webkit-text-stroke: 1px #ee955a;
+}
+section.title h3 {
+  color: #ee955a;
+  text-align: left;
+}
+section.title h3 strong {
+  -webkit-text-stroke: 1px #ee955a;
+}
+section.title h4 {
+  color: #ee955a;
+  text-align: left;
+}
+section.title h4 strong {
+  -webkit-text-stroke: 1px #ee955a;
+}
+section.title h5 {
+  color: #ee955a;
+  text-align: left;
+}
+section.title h5 strong {
+  -webkit-text-stroke: 1px #ee955a;
+}
+section.title p {
+  text-align: right;
 }
 
 section.lead h1 {
@@ -73,8 +115,8 @@ section.lead p {
 }
 
 header {
-  background-color: #ee955a;
-  color: #fff;
+  color: #ee955a;
+  top: 30px;
   font-size: 1em;
   font-weight: 700;
 }
